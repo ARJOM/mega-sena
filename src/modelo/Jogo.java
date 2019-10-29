@@ -10,10 +10,10 @@ public class Jogo {
         this.quantidade = 0;
     }
 
-    public boolean inserirNumero(int numero){
+    public boolean addNumero(int numero){
         if (estaLotado()){
             return false;
-        } else if(ehInvalido()){
+        } else if(ehInvalido(numero)){
             return false;
         } else if (estaPresente(numero)){
             return false;
